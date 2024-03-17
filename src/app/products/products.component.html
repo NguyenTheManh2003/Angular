@@ -1,0 +1,24 @@
+<div class="row container py-5" style="margin: 0 auto;">
+  <h1 class="text-center text-info">Sản phẩm</h1>
+
+  <form class="d-flex" role="search" style="width:300px ;">
+    <input class="form-control me-2" name="searching" type="search" aria-label="Search" [(ngModel)]="searching" (ngModelChange)="filterResults()" placeholder="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+  <div class="row">
+    <div class="col-lg-3" *ngFor="let item of filterProductList">
+      <a routerLink="/product-details/{{item.id}}" style="text-decoration: none;">
+            <div class="card text-center shadow mt-3">
+              <div class="card-header text-info">{{item.productName}}</div>
+              <div class="card-body" style="height: 300px; display: flex; align-items: center; justify-content: center;">
+                <img class="img-fluid" alt="Product Image" [src]="item.imageUrl">
+              </div>
+              <div class="card-footer bg-warning">
+                <span class="text-danger">{{item.price | currency:'USD':'symbol':'1.2'}}</span><br>
+                <a class="btn btn-info" href="#"><i class="fa-solid fa-cart-shopping fa-bounce" style="color: #b51717;"></i> MUA</a>
+              </div>
+            </div>
+      </a>
+    </div>
+  </div>
+</div>

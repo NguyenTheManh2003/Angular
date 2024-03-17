@@ -1,0 +1,20 @@
+.conter-footer-header {
+    text-align: center;
+}
+
+.conter-footer-wrap-img {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.conter-footer-wrap-img {
+    flex: 1;
+    
+}
+
+.conter-footer-header {
+    margin-top: 50px;
+    font-size: 50px;
+
+}

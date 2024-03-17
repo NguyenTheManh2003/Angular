@@ -1,0 +1,448 @@
+.wrapAccount{
+    background: #ffffff;
+    border-bottom: dashed 1px rgba(0, 0, 0, 0.15);
+    max-width: 420px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.wrapAccount.v2{
+    max-width: 970px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.formAccount{
+    /* max-width: 370px; */
+    margin:0 auto;
+}
+.formAccount .txt{
+    font-weight: bold;
+}
+.formAccount .color{
+    color:#ff0000;
+}
+.formAccount label{
+    display: block;
+}
+.formAccount label.error{
+    font-weight: normal;
+    color: #f00;
+}
+.formAccount input[type="text"],
+.formAccount input[type="password"],
+.formAccount select{
+    width: 100%;
+    height: 40px;
+    border: solid 1px #e5e5e5;
+    padding-left: 10px;
+}
+.formAccount input[readonly]{
+    background: #f3f3f3;
+}
+.formAccount .ll{color: #df2025;}
+.formAccount button{
+    width: 100%;
+    height: 40px;
+    background: #387b2b;
+    color:#ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    border:none;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.formAccount button:hover{
+    background: #98ca4e;
+}
+.formAccount .formFa{
+    position: relative;
+}
+.formAccount .formFa:before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left:10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.formAccount .formFa input{
+    padding-left: 30px;
+}
+.formAccount .mb{
+    margin-bottom: 10px;
+}
+.formAccount .btnRegis {
+    display: block;
+    text-align: center;
+    background: #eeeeee;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+    padding: 11px 10px;
+    color:#333333;
+}
+.formAccount .btnRegis:hover{
+    background: rgba(0,0,0,0.6);
+    color:#ffffff;
+}
+.formAccount .changAvatar{
+    max-width: 170px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.formAccount .changAvatar .img{
+    margin-bottom: 10px;
+}
+.formAccount .changAvatar .img img{
+    width: 100%;
+}
+.formAccount .changAvatar .btnChg a{
+    display: block;
+    background: #98ca4e;
+    color:#ffffff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 9px 10px;
+}
+.formAccount .changAvatar .btnChg a:hover{
+    background: #387b2b;
+    color:#ffffff;
+}
+.wrapSocial{
+    max-width: 420px;
+    margin: 0 auto;
+}
+.formSocial{
+}
+.formSocial .txt{
+    margin-bottom: 10px;
+}
+.formSocial .soc,
+.formSocial .txt{
+    margin-bottom: 10px;
+}
+.formSocial a{
+    display: block;
+    padding:9px 10px;
+    padding-left: 50px;
+    position: relative;
+    color:#ffffff;
+    background: #666666;
+}
+.formSocial a:before{
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 500;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background: #4b64a5;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color:#ffffff;
+    z-index: 2;
+}
+.formSocial a:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    z-index: 1;
+    background: #333333;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.formSocial a span{
+    position: relative;
+    z-index: 3;
+}
+.formSocial a:hover{
+    color:#ffffff;
+}
+.formSocial a:hover:after{
+    right:0;
+}
+.formSocial a.fa-facebook{
+    background: #6b86cd;
+}
+.formSocial a.fa-facebook:before,
+.formSocial a.fa-facebook:after{
+    background: #4b64a5;
+}
+
+.formSocial a.fa-google{
+    background: #f4664e;
+}
+.formSocial a.fa-google:before,
+.formSocial a.fa-google:after{
+    background: #df4930;
+}
+/*======================================================================*/
+.tableManager{
+    width:100%;
+    margin-bottom: 15px;
+    border-left:solid 1px #e5e5e5;
+    border-right:solid 1px #e5e5e5;
+    background: #ffffff;
+}
+.tableManager thead tr th {
+    padding: 8px 20px;
+    background: #387b2b;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ffffff;
+}
+.tableManager tbody tr td{
+    padding:10px 20px;
+    border-bottom:solid 1px #e5e5e5;
+}
+.tableManager tbody tr td:last-child{
+    border-right: none;
+}
+.tableManager .code{
+    font-weight: bold;
+}
+.tableManager .red{
+    color:#fa1b1b;
+    float:left;
+}
+.tableManager .blue{
+    color:#0084cb;
+}
+.tableManager .green{
+    color:#009840;
+}
+.tableManager button {
+    float: right;
+    text-transform: uppercase;
+    background: #98ca4e;
+    color: #ffffff;
+    border: none;
+    width: 70px;
+    height: 30px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding:0;
+    border-radius: 5px;
+}
+.tableManager button:hover{
+    background: #387b2b;
+}
+/*=========================================================*/
+.orderInfo{
+    border:solid 1px #e6e6e6;
+    margin-bottom: 20px;
+}
+.orderInfo .grid{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: stretch;
+}
+.orderInfo .grid .col1{
+    width: 350px;
+    border-right: solid 1px #e6e6e6;
+    padding: 25px 30px;
+}
+.orderInfo .grid .col2{
+    width:-webkit-calc(100% - 350px);
+    width:-moz-calc(100% - 350px);
+    width:-o-calc(100% - 350px);
+    width:calc(100% - 350px);
+    padding: 30px;
+}
+.orderInfo .attr p{
+    padding: 0;
+}
+.orderInfo .attr span{
+    width: 80px;
+    display: inline-block;
+}
+.orderInfo .attr span.t{
+    white-space: nowrap;
+}
+.orderInfo .attr .t{
+    font-size: 27px;
+    line-height: 35px;
+    font-weight: bold;
+    color:#387b2b;
+}
+/*==============================*/
+.stepDesign{
+    position: relative;
+}
+.stepDesign:before{
+    content: "";
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 10px;
+    height: 10px;
+    background: #f1f1f1;
+}
+.stepDesign ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.stepDesign ul li{
+    float: left;
+    width: 25%;
+    position: relative;
+    z-index: 1;
+}
+.stepDesign ul li .num{
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 5;
+}
+.stepDesign ul li:nth-child(1){
+    z-index: 4;
+}
+.stepDesign ul li:nth-child(2){
+    z-index: 3;
+}
+.stepDesign ul li:nth-child(3){
+    z-index: 2;
+}
+.stepDesign ul li:nth-child(4){
+    z-index: 1;
+}
+.stepDesign ul li .txt{
+    max-width: 110px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.stepDesign ul li:first-child .txt{
+    max-width: 90px;
+}
+.stepDesign ul li:last-child .num,
+.stepDesign ul li:last-child .txt{
+    float: right;
+}
+.stepDesign ul li:last-child .txt{
+    text-align: right;
+    max-width: 90px;
+}
+/*=======*/
+.stepDesign ul li.ac .num{
+    background: #387b2b;
+    color:#ffffff;
+}
+.stepDesign ul li.ac ~ li.ac:before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    right: 90%;
+    top: 10px;
+    width: 100%;
+    background: #387b2b;
+    z-index: 1;
+}
+.stepDesign ul li.ac ~ li.ac:last-child:before{
+    right: 0;
+    width: 185%;
+}
+.wrapCont .orderTop .grid .col1{
+    width: 200px;
+}
+/*=========================================================*/
+
+/*==========================================================================*/
+/*============================RESPONSIVE====================================*/
+/*==========================================================================*/
+@media screen and (max-width: 991px){
+.tableManager{
+    border-top: solid 1px #e5e5e5;
+}
+.tableManager thead{
+    display: none;
+}
+.tableManager tbody tr{
+    display: block;
+    padding: 15px;
+    border-bottom: solid 1px #e5e5e5;
+    position: relative;
+}
+.tableManager tbody tr td{
+    display: block;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.tableManager button{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+.orderInfo .grid{
+    display: block;
+}
+.orderInfo .grid .col1,
+.orderInfo .grid .col2{
+    width: 100%;
+}
+.orderInfo .grid .col1{
+    border-right: none;
+    border-bottom: solid 1px #e6e6e6;
+}
+.tableManager .red{
+    float: none;
+}
+}
+
+@media screen and (max-width: 768px){
+.stepDesign:before{
+    display: none;
+}
+.stepDesign ul li{
+    width: 100%;
+    float: none;
+    display: none;
+}
+.stepDesign ul li.active{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.stepDesign ul li.ac ~ li.ac:before{
+    display: none;
+}
+.stepDesign ul li .num{
+    float: left;
+    margin: 0;
+    margin-right: 10px;
+}
+.stepDesign ul li .txt{
+    overflow: hidden;
+    max-width: initial;
+}
+.orderInfo .grid .col1,
+.orderInfo .grid .col2{
+    padding: 20px 25px;
+}
+}

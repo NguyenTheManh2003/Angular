@@ -1,0 +1,173 @@
+{
+  "products": [
+    {
+      "id": "59939",
+      "productName": "Giày thể thao adidas",
+      "productCode": "GG656",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (1).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "11380",
+      "productName": "Giày thể thao van",
+      "productCode": "GG656",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (2).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "93284",
+      "productName": "Giày thể thao nike",
+      "productCode": "GG656",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (3).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "07173",
+      "productName": "Giày thể thao nike",
+      "productCode": "GG6HHH",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (4).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "19073",
+      "productName": "Giày thể thao NY",
+      "productCode": "GG65555",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (5).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "43596",
+      "productName": "Giày thể thao NY",
+      "productCode": "GGBGFG",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (6).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "45723",
+      "productName": "Giày thể thao adidas",
+      "productCode": "GG666",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (7).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "86383",
+      "productName": "Giày thể thao vans",
+      "productCode": "GG6LLL",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (8).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "83213",
+      "productName": "Giày thể thao bitis",
+      "productCode": "KHHH",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (9).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "77246",
+      "productName": "Giày thể thao bitis",
+      "productCode": "KH888",
+      "releaseDate": "2024-03-11",
+      "price": 500000,
+      "description": "thoải mái với lớp đệm ở bàn chân và gót chân, tạo sự ổn định và độ bám tốt trên sân tennis. Có thể có các lỗ thoáng khí ở phần trên để giữ đôi chân khô ráo trong quá trình chơi.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images (10).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "17683",
+      "productName": "giày vans",
+      "productCode": "KL555",
+      "releaseDate": "2024-03-11",
+      "price": 600000,
+      "description": "g nước với lớp đế có đinh và lớp vật liệu chống thấm nước, thiết kế để bám trên địa hình khắc nghiệt và nguy hiểm.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/tải xuống (3).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "20394",
+      "productName": "giày vans",
+      "productCode": "KKLH55",
+      "releaseDate": "2024-03-11",
+      "price": 600000,
+      "description": "g nước với lớp đế có đinh và lớp vật liệu chống thấm nước, thiết kế để bám trên địa hình khắc nghiệt và nguy hiểm.",
+      "starRating": 5,
+      "imageUrl": "./assets/images/tải xuống (4).jpg",
+      "inStock": 5
+    },
+    {
+      "id": "78781",
+      "productName": "sss",
+      "productCode": "kkk",
+      "releaseDate": "2024-03-12",
+      "price": 200000,
+      "description": "kkk",
+      "starRating": 5,
+      "imageUrl": "./assets/images/images.jpg",
+      "inStock": 5
+    }
+  ],
+  "User": [
+    {
+      "id": "ef21",
+      "email": "abc@gmail.com",
+      "password": "17012003",
+      "comfirm_password": "17012003"
+    },
+    {
+      "id": "7506",
+      "email": "lychau2387@gmail.com",
+      "password": "17012003",
+      "comfirm_password": "17012003"
+    },
+    {
+      "id": "0bd4",
+      "email": "nguyenthemanh2300@gmail.com",
+      "password": "17012003",
+      "comfirm_password": "17012003"
+    },
+    {
+      "id": "735c",
+      "email": "jjjjj2300@gmail.com",
+      "password": "17012003",
+      "comfirm_password": "17012003"
+    }
+  ]
+}

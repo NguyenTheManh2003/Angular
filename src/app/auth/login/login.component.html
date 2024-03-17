@@ -1,0 +1,29 @@
+<div class="container my-5">
+    <div class="card">
+      <div class="card-header bg-info">
+        <h3 class="text-center">Login</h3>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="submit()" #myForm="ngForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" id="email" name="email" type="email" aria-describedby="helpId" [(ngModel)]="form.email" placeholder="Email Address" #email="ngModel" required>
+            <small class="text-danger" id="helpId" *ngIf="email.invalid && (email.touched || email.dirty)">Trường Enail phải hợp lệ</small>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" id="password" name="password" type="password" aria-describedby="helpId" [(ngModel)]="form.password" minlength="8" autoComplete="on" placeholder="Password" #password="ngModel" required>
+            <small class="text-danger" id="helpId" *ngIf="password.invalid && (password.touched || password.dirty)">
+              <small *ngIf="password.errors?.['required']">Trường mật khẩu phải hợp lệ</small>
+              <small *ngIf="password.errors?.['minlength']">Chiều dài maayk khẩu phải tối thiểu 8 ký tự</small>
+            </small>
+          </div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" type="submit" [disabled]="myForm.form.invalid">
+              <ng-container>Submit</ng-container>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

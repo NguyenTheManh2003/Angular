@@ -1,0 +1,32 @@
+<div class="container my-4">
+    <div class="card">
+        <div class="card-header bg-info">
+            <h3 class="text-center ">Register</h3>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
+            <div class="alert alert-success" *ngIf="confirmationMessage">{{ confirmationMessage }}</div>
+            <form (ngSubmit)="submit()" #myForm="ngForm">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" id="email" name="email" type="text" aria-describedby="helpId" [(ngModel)]="form.email" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" id="password" name="password" type="password" aria-describedby="helpId" [(ngModel)]="form.password" autocomplete="on" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input class="form-control" id="confirmPassword" name="confirmPassword" type="password" aria-describedby="helpId" [(ngModel)]="form.comfirm_password" placeholder="Confirm Password">
+                <small class="text-danger" id="helpId" *ngIf="form.password !== form.comfirm_password && (myForm.controls['confirmPassword'].touched || myForm.controls['confirmPassword'].dirty)">Passwords must match</small>
+              </div>
+              <div style="text-align: center">
+                <button class="btn btn-primary" type="submit" [disabled]="myForm.form.invalid">
+                <ng-container>Submit</ng-container>
+                </button></div>
+            </form>
+        </div>
+    </div>
+   
+
+</div>

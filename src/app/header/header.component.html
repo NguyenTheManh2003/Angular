@@ -1,0 +1,141 @@
+<!-- 
+<script>
+  // Wait for the DOM to be fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get all the navigation links
+    var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    // Loop through each link
+    navLinks.forEach(function(link) {
+      // Add click event listener to each link
+      link.addEventListener("click", function() {
+        // Remove active class from all links
+        navLinks.forEach(function(navLink) {
+          navLink.classList.remove("active");
+        });
+
+        // Add active class to the clicked link
+        this.classList.add("active");
+      });
+    });
+  });
+</script>   -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+        <div class="me-5">
+            <a class="navbar-brand" href="javascript:void(0)" routerLink="/"> <img src="assets/images/logo-white.png" width="150px"></a>
+        </div>
+
+        <button class="navbar-toggler" data-bs-target="#mynavbar" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto ">
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)" routerLink="/" ><i class="bi bi-house-exclamation"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" routerLink="/product"> <i class="bi bi-phone-vibrate-fill"></i> Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"> <i class="bi bi-person-circle"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"> <i class="bi bi-person-circle"></i> Contact</a>
+          </li>
+
+          <div *ngIf="userInfo" class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" type="button">
+              <i class="fas fa-user"></i> {{ userInfo.email }} <!-- Display user name -->
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" routerLink="/profile">Profile</a></li> <!-- Link to user profile -->
+              <li><a class="dropdown-item" href="#" (click)="logout()">Logout</a></li> <!-- Call logout method -->
+            </ul>
+          </div>
+          <div *ngIf="!userInfo" class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" type="button">
+              <i class="fas fa-user"></i> Account
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" routerLink="/login">Login</a></li>
+              <li><a class="dropdown-item" href="#" routerLink="/register">Register</a></li>
+            </ul>
+          </div>
+          
+
+        </ul>
+        <div class="p-1" style="font-size: 20px; color: blue;" data-toggle="modal" data-target="#modelId">
+          <i class="bi bi-cart" style="font-size: 35px; color: red;"></i> ({{ ItemCount()}})
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" arialabelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+          <table style="width: 100%;" class="text-center table">
+              <tr>
+                  <th>Picture</th>
+                  <th>Product name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total amount</th>
+                  <th></th>
+              </tr>
+              <!-- dùng ng-for thể hiện giỏ hàng -->
+              <tr *ngFor=" let item of cartList;let i=index">
+                  <td><img src="{{item.ImageUrl}}" style="height: 100px;width: 100px;"></td>
+                  <td class="align-middle"> {{item.Name}}</td>
+                  <td class="align-middle">{{item.Price | currency}}</td>
+                  <td class="align-middle">{{item.Quantity}}</td>
+                  <td class="align-middle">{{item.Price! * item.Quantity!| currency}}</td>
+                  <td class="align-middle">
+                      <button class="btn bg-black text-white" (click)="Remove(i)">Remove</button>
+                  </td>
+              </tr>
+              <tr>
+                  <th colspan="2"></th>
+                  <th>Sum price:</th>
+                  <th>{{ItemCount()}}</th>
+                  <th>{{ ItemSum() | currency}}</th>
+                  <th>
+                      <button class="btn bg-black text-white" (click)="DeleteAll()">Delete All</button>
+                  </th>
+              </tr>
+          </table>
+      </div>
+  </div>
+</div>
+<!-- -->
+<script>
+ document.addEventListener("DOMContentLoaded", function() {
+  // Get all the navigation links
+  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  // Loop through each link
+  navLinks.forEach(function(link) {
+    // Add click event listener to each link
+    link.addEventListener("click", function() {
+      // Remove active class from all links
+      navLinks.forEach(function(navLink) {
+        navLink.classList.remove("active");
+      });
+
+      // Add active class to the clicked link
+      this.classList.add("active");
+    });
+
+    // Add active class to the link corresponding to the current URL
+    if (window.location.pathname === link.getAttribute("href")) {
+      link.classList.add("active");
+    }
+  });
+});
+
+</script>
+
+
